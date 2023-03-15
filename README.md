@@ -6,7 +6,7 @@ Daily crypto market information data visualization art experiments
 ## Fetch Prices
 
 
-This script fetches the current prices in USD of the top 100 cryptocurrencies from the Coingecko API: https://madjin.github.io/daily-crypto/data.txt
+Fetche the current prices in USD of the top 100 cryptocurrencies from Coingecko API: https://madjin.github.io/daily-crypto/data.txt
 
 
 ![Screenshot at 2023-03-15 15-40-33](https://user-images.githubusercontent.com/32600939/225433892-1770d224-28d6-4a8b-bd5e-6ebc27317afe.png)
