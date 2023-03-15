@@ -9,6 +9,8 @@ Daily crypto market information data visualization art experiments
 This script fetches the current prices in USD of the top 100 cryptocurrencies from the Coingecko API:
 
 
+![Screenshot at 2023-03-15 15-40-33](https://user-images.githubusercontent.com/32600939/225433892-1770d224-28d6-4a8b-bd5e-6ebc27317afe.png)
+
 ```bash
 #!/bin/bash
 
@@ -42,7 +44,7 @@ This will run the script at midnight every day and output the current prices in 
 
 ## Create Cubes
 
-
+![Screenshot at 2023-03-15 15-54-57](https://user-images.githubusercontent.com/32600939/225433937-1b167902-9b44-438a-9501-6bc48fc00b41.png)
 
 Blender Python script that
 
@@ -52,6 +54,9 @@ Blender Python script that
 - exports a glTF of each cube as a separate file
 - renames filename same as the node
 - saves the files into new timestamped folder based on MM-DD-YYYY
+
+![Screenshot at 2023-03-15 16-13-14](https://user-images.githubusercontent.com/32600939/225433977-a5c93666-4d1c-4c62-8608-7bb559010f11.png)
+
 
 ```python
 import bpy
@@ -110,4 +115,16 @@ for line in lines:
     # Delete the cube
     bpy.ops.object.delete()
 ```
+
+---
+
+## Ideas
+
+Create a daily "blockchain"?
+
+![Screenshot at 2023-03-15 16-04-57](https://user-images.githubusercontent.com/32600939/225434181-76f8d8a7-6c69-45b9-b88c-575643d6e309.png)
+
+Separate each cube by distance, use `gltf-transform` to merge into 1 file?
+
+Texture each cube the icon of the coin / create a huge texture atlas for top 100 coins
 
