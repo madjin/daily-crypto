@@ -10,10 +10,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run fetch_prices.sh
+      - name: Run daily generation
         run: |
-          chmod +x fetch_prices.sh
+          chmod +x fetch_prices.sh daily_blender.sh
           ./fetch_prices.sh > data.txt
+          ./daily_blender.sh
       - name: Commit changes
         run: |
           git config --global user.name "madjin"
