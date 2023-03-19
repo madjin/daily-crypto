@@ -1,4 +1,5 @@
 # daily-crypto
+[![Fetch Prices](https://github.com/madjin/daily-crypto/actions/workflows/main.yml/badge.svg)](https://github.com/madjin/daily-crypto/actions/workflows/main.yml)
 
 Daily crypto market information data visualization art experiments
 
