@@ -1,7 +1,8 @@
 name: Fetch Prices
 
-
-on: [push]
+on:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   fetch_prices:
