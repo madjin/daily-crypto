@@ -6,14 +6,9 @@ from datetime import datetime
 # Set the path to the data file
 data_file = "data.txt"
 
-# Define the dimensions of a US dollar bill in Blender units
-BILL_WIDTH = 0.0663
-BILL_HEIGHT = 0.156
-
 # Define a function to calculate the size of a cube based on its volume
 def get_cube_size(volume):
-    # Calculate the cube size based on the desired dimensions of a US dollar bill
-    size = math.pow((volume * BILL_WIDTH * BILL_HEIGHT) / (2.61 * 6.14), 1/3)
+    size = math.pow(volume, 1/3)
     return size
 
 # Get the current date
@@ -35,7 +30,7 @@ for line in lines:
     name = parts[0].strip()
     volume = float(parts[1].strip())
     
-    # Calculate the size of the cube based on its volume and the desired dimensions of a US dollar bill
+    # Calculate the size of the cube based on its volume
     size = get_cube_size(volume)
     
     # Create a new cube
