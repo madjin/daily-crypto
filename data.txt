@@ -1,100 +1,100 @@
-Bitcoin: 27251
-Ethereum: 1787.72
-Tether: 1.006
-BNB: 336.21
-USD Coin: 1.006
-XRP: 0.38
-Cardano: 0.343991
-Polygon: 1.2
-Dogecoin: 0.075135
-Lido Staked Ether: 1784.15
-Solana: 21.76
-Binance USD: 1.005
-Polkadot: 6.48
-Shiba Inu: 1.102e-05
-Litecoin: 84.79
-TRON: 0.066676
-Avalanche: 17.38
-Dai: 1.004
-Uniswap: 6.7
-Wrapped Bitcoin: 27352
-Cosmos Hub: 12.47
-Toncoin: 2.42
-Chainlink: 7.08
-LEO Token: 3.38
-Ethereum Classic: 21.64
-OKB: 48.64
-Monero: 151.53
-Bitcoin Cash: 134.14
-Filecoin: 6.08
-Aptos: 13.21
-Stellar: 0.086954
-Lido DAO: 2.57
-TrueUSD: 1.008
-Hedera: 0.063645
-Quant: 129.24
-NEAR Protocol: 2.16
-Cronos: 0.071445
-VeChain: 0.02338411
-Stacks: 1.22
-Internet Computer: 5.46
-ApeCoin: 4.36
-Algorand: 0.220002
-The Graph: 0.160108
-Fantom: 0.503317
-ImmutableX: 1.51
-The Sandbox: 0.692959
-EOS: 1.12
-Decentraland: 0.643453
-Aave: 79.54
-Tezos: 1.21
-MultiversX: 44.14
-Flow: 1.071
-Axie Infinity: 9.27
-Theta Network: 1.062
-Frax: 1.004
-Synthetix Network: 2.96
-KuCoin: 9.32
-NEO: 12.24
-Optimism: 2.71
-Conflux: 0.414368
-Rocket Pool: 42.84
-Pax Dollar: 1.004
-Terra Luna Classic: 0.0001343
-Curve DAO: 1.016
-Gate: 5.44
-Mina Protocol: 0.873673
-Klaytn: 0.241053
-WhiteBIT Token: 5.07
-BitDAO: 0.554445
-USDD: 1.003
-Bitcoin SV: 37.37
-PancakeSwap: 3.85
-GMX: 80.54
-Huobi: 4.07
-Frax Share: 8.83
-Chiliz: 0.121889
-Dash: 57.45
-BitTorrent: 6.71136e-07
-SingularityNET: 0.530074
-Maker: 705.06
-eCash: 3.208e-05
-IOTA: 0.221216
-Bitget Token: 0.390231
-Render: 1.52
-cETH: 35.63
-Edgecoin: 1.007
-Trust Wallet: 1.25
-Mask Network: 6.77
+Bitcoin: 28137
+Ethereum: 1793.1
+Tether: 1.005
+BNB: 337.82
+USD Coin: 1.003
+XRP: 0.389451
+Cardano: 0.347308
+Polygon: 1.17
+Lido Staked Ether: 1791.94
+Dogecoin: 0.075107
+Solana: 21.99
+Binance USD: 0.998842
+Polkadot: 6.49
+Shiba Inu: 1.098e-05
+Litecoin: 84.47
+TRON: 0.06704
+Avalanche: 17.64
+Dai: 0.99951
+Uniswap: 6.53
+Wrapped Bitcoin: 28166
+Cosmos Hub: 12.41
+Toncoin: 2.41
+Chainlink: 7.12
+LEO Token: 3.37
+Ethereum Classic: 21.26
+OKB: 48.38
+Monero: 154.26
+Bitcoin Cash: 136.77
+Filecoin: 6.31
+Stellar: 0.087977
+Aptos: 13.14
+Lido DAO: 2.49
+TrueUSD: 1.006
+Hedera: 0.065313
+Quant: 131.31
+NEAR Protocol: 2.15
+Cronos: 0.072185
+VeChain: 0.02460764
+Internet Computer: 5.45
+ApeCoin: 4.3
+Stacks: 1.16
+Algorand: 0.221519
+The Graph: 0.15586
+Fantom: 0.494033
+EOS: 1.16
+ImmutableX: 1.46
+The Sandbox: 0.690333
+Decentraland: 0.638686
+Tezos: 1.25
+Aave: 79.9
+Flow: 1.089
+MultiversX: 44.07
+Theta Network: 1.074
+Axie Infinity: 9.2
+Frax: 1.001
+Conflux: 0.460733
+NEO: 13.52
+Synthetix Network: 2.9
+KuCoin: 9.34
+Optimism: 2.72
+Rocket Pool: 43.19
+Pax Dollar: 0.999395
+Terra Luna Classic: 0.00013539
+Curve DAO: 1.025
+Gate: 5.49
+Mina Protocol: 0.871222
+Klaytn: 0.240023
+WhiteBIT Token: 5.06
+USDD: 1.004
+BitDAO: 0.553454
+Bitcoin SV: 37.49
+PancakeSwap: 3.86
+GMX: 81.53
+Chiliz: 0.122273
+Huobi: 4.03
+Dash: 57.88
+Frax Share: 8.46
+eCash: 3.271e-05
+BitTorrent: 6.64849e-07
+SingularityNET: 0.518406
+Maker: 691.17
+IOTA: 0.221363
+cETH: 35.97
+Render: 1.48
+Bitget Token: 0.382649
+Edgecoin: 1.005
+Trust Wallet: 1.26
 Tokenize Xchange: 6.44
-PAX Gold: 1975
-Tether Gold: 1976.26
-XDC Network: 0.03467349
-Osmosis: 0.866116
-Zilliqa: 0.02902
-Arweave: 9.14
-Kava: 1.013
-OKC Token: 24.8
-Fetch.ai: 0.427437
-Loopring: 0.35733
-1inch: 0.532048
+PAX Gold: 1982.47
+Tether Gold: 1997.77
+XDC Network: 0.03536533
+Zilliqa: 0.02962318
+Osmosis: 0.864292
+1inch: 0.557926
+Mask Network: 6.05
+Arweave: 9.1
+Loopring: 0.360749
+Kava: 0.995061
+Fetch.ai: 0.423344
+Radix: 0.0440009
