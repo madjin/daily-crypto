@@ -65,7 +65,6 @@ Manages texture creation and mapping:
 - Blender
 - jq (for JSON processing)
 - curl (for API requests)
-## Create Cubes
 
 ---
 
