@@ -2,6 +2,29 @@ import bpy
 import os
 from datetime import datetime
 
+def cleanup_old_data():
+    """Remove all existing signs and their materials."""
+    # Remove existing signs
+    for obj in bpy.data.objects:
+        if obj.name.endswith('_sign'):
+            # Remove materials associated with this object
+            for material_slot in obj.material_slots:
+                if material_slot.material:
+                    bpy.data.materials.remove(material_slot.material)
+            # Remove the object
+            bpy.data.objects.remove(obj, do_unlink=True)
+
+    # Clean up any orphaned materials with '_sign' in their name
+    for material in bpy.data.materials:
+        if '_sign' in material.name:
+            bpy.data.materials.remove(material)
+
+def clean_name(name):
+    """Clean name by removing special characters."""
+    name = name.replace(' ', '_')
+    cleaned = ''.join(char for char in name if char.isalnum() or char in '_-')
+    return cleaned
+
 # Get the directory of the blend file
 blend_dir = os.path.dirname(bpy.data.filepath)
 if not blend_dir:
@@ -10,31 +33,9 @@ if not blend_dir:
 # Set paths
 today = datetime.today().strftime("%m-%d-%Y")
 data_file = os.path.join(blend_dir, "data", f"{today}.txt")
-image_dir = os.path.join(blend_dir, "image")
 
-def create_material_from_image(image_path, name):
-    """Create a new material with the given image as texture"""
-    # Create new material
-    mat = bpy.data.materials.new(name=name)
-    mat.use_nodes = True
-    
-    # Get the node tree
-    nodes = mat.node_tree.nodes
-    bsdf = nodes["Principled BSDF"]
-    
-    # Create texture node
-    tex = nodes.new('ShaderNodeTexImage')
-    tex.image = bpy.data.images.load(image_path)
-    
-    # Link texture to base color
-    mat.node_tree.links.new(tex.outputs["Color"], bsdf.inputs["Base Color"])
-    
-    return mat
-
-# Remove existing signs first
-for obj in bpy.data.objects:
-    if obj.name.endswith('_sign'):
-        bpy.data.objects.remove(obj, do_unlink=True)
+# Clean up existing signs and materials
+cleanup_old_data()
 
 # Read and process the data file
 try:
@@ -43,6 +44,8 @@ try:
         lines = []
         for line in f:
             name, value = [part.strip() for part in line.split(":")]
+            # Clean name (remove spaces and special characters)
+            name = clean_name(name)
             lines.append((name, float(value)))
         
         # Sort lines by value
@@ -50,7 +53,7 @@ try:
         
         # Initialize position
         x = 0
-        y = 0
+        y = 0.2
         
         # Create signs
         for name, value in lines:
@@ -67,23 +70,6 @@ try:
             
             # Set dimensions (height same as width, depth 1/4 of width)
             sign.scale = (0.5, 0.125, 0.5)
-            
-            # Load and apply texture
-            image_path = os.path.join(image_dir, f"{name}.png")
-            if os.path.exists(image_path):
-                # Create and assign material
-                material = create_material_from_image(image_path, name)
-                
-                # Clear existing materials and add new one
-                sign.data.materials.clear()
-                sign.data.materials.append(material)
-                
-                # UV unwrapping
-                bpy.context.view_layer.objects.active = sign
-                bpy.ops.object.mode_set(mode='EDIT')
-                bpy.ops.mesh.select_all(action='SELECT')
-                bpy.ops.uv.smart_project()
-                bpy.ops.object.mode_set(mode='OBJECT')
             
             # Update position for next sign
             x += 1
