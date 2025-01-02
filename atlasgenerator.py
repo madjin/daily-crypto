@@ -1,9 +1,10 @@
 import bpy
 import os
 from datetime import datetime
+import numpy as np
 
 try:
-    from PIL import Image
+    from PIL import Image, ImageFilter, ImageOps, ImageEnhance
 
     USE_PIL = True
 except ImportError:
@@ -85,7 +86,7 @@ class TextureAtlasGenerator:
         # Create new atlas images for each type
         atlases = {
             'color': Image.new("RGBA", (atlas_size, atlas_size), (0, 0, 0, 0)),
-            'normal': Image.new("RGBA", (atlas_size, atlas_size), (0, 0, 0, 0)),
+            'normal': Image.new("RGBA", (atlas_size, atlas_size), (128, 128, 255, 255)),  # Default normal map blue
             'emission': Image.new("RGBA", (atlas_size, atlas_size), (0, 0, 0, 0)),
             'roughness': Image.new("RGBA", (atlas_size, atlas_size), (0, 0, 0, 0))
         }
@@ -107,20 +108,70 @@ class TextureAtlasGenerator:
 
             # Process each texture type
             try:
-                # Debug print
-                print(f"\nProcessing textures for {image_name}")
-                print(f"Looking in directory: {self.image_dir}")
-                print(f"Available files: {os.listdir(self.image_dir)}")
-
                 # Base color
                 base_image_files = [f for f in os.listdir(self.image_dir)
                                 if os.path.splitext(f)[0] == image_name]
                 if base_image_files:
-                    print(f"Found base texture: {base_image_files[0]}")
                     with Image.open(os.path.join(self.image_dir, base_image_files[0])) as img:
                         img = img.convert("RGBA")
                         img = img.resize((tile_size, tile_size), Image.Resampling.LANCZOS)
                         atlases['color'].paste(img, (x, y))
+
+                # Normal map
+                normal_file = f"{image_name}_normal.png"
+                if normal_file in os.listdir(self.image_dir):
+                    with Image.open(os.path.join(self.image_dir, normal_file)) as img:
+                        img = img.resize((tile_size, tile_size), Image.Resampling.LANCZOS)
+                        # Convert to RGBA if not already
+                        if img.mode != "RGBA":
+                            img = img.convert("RGBA")
+                        atlases['normal'].paste(img, (x, y))
+                else:
+                    # If no normal map exists, create one from the base color image
+                    if base_image_files:
+                        with Image.open(os.path.join(self.image_dir, base_image_files[0])) as img:
+                            img = img.convert("RGBA")
+                            # Create depth map
+                            depth_map = ImageOps.grayscale(img)
+                            depth_map = ImageOps.invert(depth_map)
+                            enhancer = ImageEnhance.Contrast(depth_map)
+                            depth_map = enhancer.enhance(2.0)
+                            depth_map = depth_map.filter(ImageFilter.GaussianBlur(radius=1))
+                            
+                            # Create normal map from depth
+                            depth_array = np.array(depth_map)
+                            sobel_x = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
+                            sobel_y = np.array([[1, 2, 1], [0, 0, 0], [-1, -2, -1]])
+                            
+                            grad_x = np.zeros_like(depth_array, dtype=float)
+                            grad_y = np.zeros_like(depth_array, dtype=float)
+                            
+                            for i in range(1, depth_array.shape[0] - 1):
+                                for j in range(1, depth_array.shape[1] - 1):
+                                    grad_x[i, j] = np.sum(depth_array[i-1:i+2, j-1:j+2] * sobel_x)
+                                    grad_y[i, j] = np.sum(depth_array[i-1:i+2, j-1:j+2] * sobel_y)
+                            
+                            strength = 5.0
+                            grad_x = grad_x * strength / 255.0
+                            grad_y = grad_y * strength / 255.0
+                            
+                            normal_map = np.zeros((depth_array.shape[0], depth_array.shape[1], 3))
+                            normal_map[..., 0] = grad_x
+                            normal_map[..., 1] = grad_y
+                            normal_map[..., 2] = 1.0
+                            
+                            norm = np.sqrt(np.sum(normal_map**2, axis=2))
+                            normal_map /= norm[..., np.newaxis]
+                            
+                            normal_map = ((normal_map + 1.0) * 0.5 * 255).astype(np.uint8)
+                            normal_img = Image.fromarray(normal_map)
+                            normal_img = normal_img.resize((tile_size, tile_size), Image.Resampling.LANCZOS)
+                            
+                            # Convert to RGBA
+                            if normal_img.mode != "RGBA":
+                                normal_img = normal_img.convert("RGBA")
+                                
+                            atlases['normal'].paste(normal_img, (x, y))
 
                 # Emission map
                 emission_file = f"{image_name}_emission.png"
