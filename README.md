@@ -166,7 +166,7 @@ for line in lines:
 
 ---
 
-## Ideas
+## Ideas/To Do
 
 Create a daily "blockchain"?
 
@@ -174,4 +174,11 @@ Create a daily "blockchain"?
 
 Separate each cube by distance, use `gltf-transform` to merge into 1 file?
 
-Texture each cube the icon of the coin / create a huge texture atlas for top 100 coins
+Texture each cube the icon of the coin
+- make it look cooler
+- unify scripts
+- display name, price, market-cap (likely create this as extruded 3d objects so it's not just some boring flat image applied to a cube)
+- export all in a single object (?) - this is mostly where I had questions, what was the end deployment (like is it going to be walkable in 3d, or are they still just looking at it on a flat screen)
+- fix ticker and stack distribution
+- add gitignore
+- rename texture atlas to correlate with date
