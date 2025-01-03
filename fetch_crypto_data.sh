@@ -42,7 +42,7 @@ for row in $(cat crypto_data.json | jq -r '.[] | @base64'); do
     echo "Writing to file: ${name}: ${formatted_cap} ${formatted_price}"
     
     # Write to file with the requested format
-    echo "${name}: ${formatted_cap} ${formatted_price}" >> "$OUTPUT_FILE"
+    echo "${name}: ${formatted_cap} ${formatted_price}**" >> "$OUTPUT_FILE"
 done
 
 # Debug: Show the first few lines of the output file
