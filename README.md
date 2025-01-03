@@ -67,6 +67,9 @@ Manages texture creation and mapping:
 - curl (for API requests)
 
 ---
+## Current data display
+![ai16z](https://raw.githubusercontent.com/danieljtrujillo/daily-crypto-dev/refs/heads/main/.github/workflows/ai16z.png)
+---
 
 ## Ideas/To Do
 
