@@ -1,100 +1,100 @@
-Bitcoin: 95657
-Ethereum: 3411.2
-Tether: 0.99847
-XRP: 2.36
-BNB: 705.31
-Solana: 205.76
-Dogecoin: 0.333352
-USDC: 1.0
-Cardano: 0.931039
-Lido Staked Ether: 3409.27
-TRON: 0.258141
-Avalanche: 38.79
-Toncoin: 5.64
-Wrapped stETH: 4049.78
-Chainlink: 22.28
-Sui: 4.36
-Shiba Inu: 0.00002216
-Stellar: 0.423205
-Wrapped Bitcoin: 95421
-Polkadot: 7.22
-Hedera: 0.287626
-WETH: 3411.27
-Bitcoin Cash: 458.93
-Hyperliquid: 25.85
-Pepe: 0.00002029
-Uniswap: 14.1
-LEO Token: 8.99
-Litecoin: 105.86
-Bitget Token: 5.99
-Wrapped eETH: 3601.82
-NEAR Protocol: 5.4
-Ethena USDe: 0.997257
-USDS: 1.0
-Aptos: 9.19
-Internet Computer: 10.68
-Aave: 333.93
-Virtuals Protocol: 5.01
-Mantle: 1.29
-Cronos: 0.151627
-POL (ex-MATIC): 0.484229
-Ethereum Classic: 26.39
-Render: 7.45
-VeChain: 0.0472216
-Bittensor: 517.25
-MANTRA: 3.85
-Tokenize Xchange: 45.83
-Artificial Superintelligence Alliance: 1.4
-Monero: 193.48
-WhiteBIT Coin: 24.67
-Dai: 1.0
-Algorand: 0.388808
-Arbitrum: 0.763994
-Filecoin: 5.19
-Ethena: 1.01
-Kaspa: 0.119901
-OKB: 49.4
-Cosmos Hub: 6.67
-ai16z: 2.32
-Optimism: 1.84
-Stacks: 1.62
-Bonk: 0.00003179
-Pudgy Penguins: 0.03821511
-Celestia: 5.04
-Immutable: 1.39
-Theta Network: 2.37
-Fantom: 0.826245
-First Digital USD: 0.996992
-Ondo: 1.47
-Gate: 16.87
-Injective: 21.3
-Binance-Peg WETH: 3411.55
-The Graph: 0.215721
-Movement: 0.898562
-dogwifhat: 1.97
-Worldcoin: 2.28
-Sei: 0.431633
-FLOKI: 0.00018404
-Rocket Pool ETH: 3826.97
-Quant: 117.04
-Kelp DAO Restaked ETH: 3523.19
-JasmyCoin: 0.03499526
-Usual USD: 1.0
-Coinbase Wrapped BTC: 95683
-Lido DAO: 1.84
-THORChain: 4.76
-GALA: 0.03738805
-Raydium: 5.39
-Lombard Staked BTC: 96016
-Mantle Staked Ether: 3590.11
-Flare: 0.02745718
-Fasttoken: 3.53
-Beam: 0.02785206
-The Sandbox: 0.581569
-Tezos: 1.37
-Pyth Network: 0.375823
-Maker: 1527.62
-Binance Staked SOL: 210.67
-Brett: 0.134364
-NEXO: 1.32
-KuCoin: 10.72
+Bitcoin: 1,923,055,101,871 97031.00
+Ethereum: 414,808,301,174 3442.88
+Tether: 137,309,611,152 1.00
+XRP: 136,707,530,073 2.38
+BNB: 102,656,462,483 703.66
+Solana: 99,545,716,460 206.18
+Dogecoin: 49,604,309,596 0.34
+USDC: 43,904,481,517 1.00
+Cardano: 34,346,636,076 0.96
+Lido Staked Ether: 33,213,947,662 3442.23
+TRON: 22,795,671,550 0.26
+Avalanche: 15,989,200,422 39.05
+Wrapped stETH: 14,459,894,683 4111.49
+Toncoin: 14,261,342,554 5.61
+Chainlink: 13,881,153,806 22.00
+Shiba Inu: 13,362,425,187 0.00
+Sui: 13,173,774,093 4.38
+Stellar: 12,959,416,068 0.43
+Wrapped Bitcoin: 12,825,258,226 96895.00
+Hedera: 11,129,681,671 0.29
+Polkadot: 10,879,370,520 7.15
+WETH: 10,374,976,524 3443.75
+Bitcoin Cash: 9,083,822,155 458.54
+Uniswap: 8,572,843,747 14.28
+Pepe: 8,522,563,474 0.00
+LEO Token: 8,352,325,149 9.04
+Litecoin: 7,896,580,591 104.76
+Hyperliquid: 7,624,650,278 22.84
+Bitget Token: 7,449,046,045 6.23
+Wrapped eETH: 6,759,263,829 3638.15
+NEAR Protocol: 6,309,679,495 5.40
+Ethena USDe: 5,854,816,244 1.00
+USDS: 5,277,849,949 1.00
+Aptos: 5,171,027,749 9.27
+Internet Computer: 5,081,486,393 10.61
+Aave: 4,992,713,243 332.10
+Virtuals Protocol: 4,538,703,418 4.54
+Mantle: 4,534,399,228 1.35
+Bittensor: 4,187,580,222 518.11
+Cronos: 4,090,532,179 0.15
+POL (ex-MATIC): 4,060,552,833 0.48
+Ethereum Classic: 4,018,930,254 26.75
+Render: 3,975,678,828 7.68
+VeChain: 3,914,782,566 0.05
+MANTRA: 3,697,500,165 3.86
+Artificial Superintelligence Alliance: 3,615,929,851 1.38
+Monero: 3,606,080,053 195.44
+WhiteBIT Coin: 3,555,663,560 24.66
+Tokenize Xchange: 3,503,222,935 43.77
+Dai: 3,346,006,110 1.00
+Algorand: 3,278,982,226 0.39
+Arbitrum: 3,246,852,246 0.77
+Filecoin: 3,241,191,325 5.24
+Ethena: 3,149,464,302 1.04
+Kaspa: 3,103,844,279 0.12
+OKB: 2,990,027,657 49.81
+Cosmos Hub: 2,600,889,136 6.66
+Optimism: 2,515,003,282 1.86
+Stacks: 2,479,251,411 1.64
+Bonk: 2,409,267,027 0.00
+Theta Network: 2,398,248,646 2.40
+Celestia: 2,392,812,900 5.03
+ai16z: 2,391,270,121 2.17
+Immutable: 2,352,954,838 1.37
+Pudgy Penguins: 2,347,873,350 0.04
+Fantom: 2,267,345,769 0.81
+Gate: 2,189,092,695 17.56
+First Digital USD: 2,105,458,777 1.00
+Injective: 2,104,160,434 21.56
+The Graph: 2,100,850,700 0.22
+Binance-Peg WETH: 2,082,839,774 3442.62
+Ondo: 2,077,234,175 1.44
+Movement: 2,024,793,917 0.90
+dogwifhat: 1,997,085,570 2.00
+Worldcoin: 1,924,188,394 2.28
+Sei: 1,799,601,815 0.43
+Rocket Pool ETH: 1,788,331,825 3863.34
+FLOKI: 1,773,946,319 0.00
+Usual USD: 1,737,667,836 1.00
+Kelp DAO Restaked ETH: 1,723,046,275 3558.02
+Lido DAO: 1,696,846,860 1.89
+Coinbase Wrapped BTC: 1,687,714,085 97091.00
+JasmyCoin: 1,681,736,051 0.03
+Quant: 1,642,717,801 112.91
+GALA: 1,642,643,311 0.04
+THORChain: 1,635,617,580 4.79
+Lombard Staked BTC: 1,580,516,393 97099.00
+Raydium: 1,570,995,676 5.40
+Mantle Staked Ether: 1,563,083,096 3628.02
+Flare: 1,524,605,115 0.03
+Fasttoken: 1,510,657,687 3.53
+Beam: 1,487,629,344 0.03
+The Sandbox: 1,418,010,488 0.58
+Tezos: 1,397,533,061 1.37
+Fartcoin: 1,389,552,182 1.39
+Maker: 1,377,638,055 1544.08
+Solv Protocol SolvBTC: 1,377,637,462 96922.00
+Binance Staked SOL: 1,350,983,424 211.13
+NEXO: 1,347,827,465 1.35
+Pyth Network: 1,347,539,257 0.37

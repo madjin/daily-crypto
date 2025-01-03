@@ -7,7 +7,7 @@ today=$(date +"%m-%d-%Y")
 mkdir -p "images/$today"
 
 # Extract coin names and image URLs together
-jq -r '.[] | "\(.name)|\(.image)"' prices.json | while IFS='|' read -r name image; do
+jq -r '.[] | "\(.name)|\(.image)"' crypto_data.json | while IFS='|' read -r name image; do
     # Clean the name (remove spaces and special characters)
     clean_name=$(echo "$name" | tr ' ' '_' | tr -cd '[:alnum:]_-')
     

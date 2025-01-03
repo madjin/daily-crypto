@@ -49,10 +49,13 @@ try:
         # Create signs
         for line in lines:
             try:
-                # Parse the value from the line
-                name, value = [part.strip() for part in line.split(":")]
+                # Parse the name and values from the line
+                name, values = [part.strip() for part in line.split(":")]
                 name = clean_name(name)
-                value = float(value)
+                
+                # Split values by space and get the last value as price
+                values_parts = values.split()
+                value = float(values_parts[-1])  # Get the last value as price
                 
                 # Create base cube for sign
                 # Add 0.2 to y and z coordinates for offset

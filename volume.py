@@ -51,12 +51,16 @@ y = 0
 # Loop through the lines and create cubes
 for line in lines:
     try:
-        # Parse the value from the line
-        name, value = [part.strip() for part in line.split(":")]
-        value = float(value)
+        # Parse the name and values from the line
+        name, values = [part.strip() for part in line.split(":")]
+        
+        # Split values by space to separate market cap and price
+        # The price will be the last value
+        values_parts = values.split()
+        price = float(values_parts[-1])  # Get the last value as price
         
         # Calculate the z translation based on the value
-        z_translation = value * dollar_bill_depth
+        z_translation = price * dollar_bill_depth
         
         # Create a new cube
         bpy.ops.mesh.primitive_cube_add(

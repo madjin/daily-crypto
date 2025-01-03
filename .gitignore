@@ -1,0 +1,52 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+env/
+venv/
+
+# Blender backup files
+*.blend1
+
+# Environment variables and settings
+*.env
+
+# Logs
+*.log
+*.out
+*.err
+logs/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+
+# Python-related packaging files
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# Testing output
+.cache/
+pytest_cache/
+nose2-*.xml
+
+# Documentation build files
+/site/
